@@ -19,7 +19,10 @@ public:
     bool search(int rollNo, Node** previous, Node** current);
     bool deleteNode(int rollNo);
     bool listEmpty();
-    void traverse(); 
+    void traverse();
+    void revtraverse();
+    void hapus();
+    void searchData();
 };
 
 DoubleLinkedList::DoubleLinkedList() {
@@ -113,6 +116,10 @@ void DoubleLinkedList::traverse() {
             currentNode = currentNode->next;
         }
     }
+}
+
+void DoubleLinkedList::revtraverse() {
+
 }
 
 int main()
